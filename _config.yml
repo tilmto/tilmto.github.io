@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Yonggan Fu (傅泳淦)"
-  avatar           : "images/profile.png"
+  avatar           : "profile.png"
   bio              : "A 3rd Year PhD Student at Rice EIC Lab"
   location         : "Houston, Texas, USA"
   employer         :
