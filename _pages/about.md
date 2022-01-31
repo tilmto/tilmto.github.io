@@ -9,7 +9,9 @@ redirect_from:
 ---
 
 
-Hi, I'm Yonggan Fu, a 3rd-year PhD student at Rice University, Efficient and Intelligent Computing Lab, advised by [Prof. Yingyan Lin](https://eiclab.net/). I received my bachelor degree with a dual major in Applied Physics and Computer Science from the School of the Gifted Young, [University of Science and Technology of China](https://en.ustc.edu.cn/). I'm also fortunate to work closely with [Dr. Meng Li](http://mengli.me/) and [Dr. Haichuan Yang](https://hyang1990.github.io/) from Meta On-Device AI group and [Dr. Yang Zhang](https://mitibmwatsonailab.mit.edu/people/yang-zhang/) from MIT-IBM Watson AI Lab. My research goal is to turn machine learning’s big promise of empowering edge vision/speech applications into a reality. To achieve this, my research interests include but are not limited to: model compression, adversarial robustness, AutoML, as well as the intersection of deep learning and computer architecture.
+Hi, I'm Yonggan Fu, a 3rd-year PhD student at Rice University, Efficient and Intelligent Computing Lab, advised by [Prof. Yingyan Lin](https://eiclab.net/). I received my bachelor degree with a dual major in Applied Physics and Computer Science from the School of the Gifted Young, [University of Science and Technology of China](https://en.ustc.edu.cn/). I'm also fortunate to work closely with [Dr. Meng Li](http://mengli.me/) and [Dr. Haichuan Yang](https://hyang1990.github.io/) from Meta On-Device AI group and [Dr. Yang Zhang](https://mitibmwatsonailab.mit.edu/people/yang-zhang/) from MIT-IBM Watson AI Lab. 
+
+My research goal is to turn machine learning’s big promise of empowering edge vision/speech applications into a reality. To achieve this, my research interests include but are not limited to: model compression, adversarial robustness, AutoML, as well as the intersection of deep learning and computer architecture.
 
 <!-- 
 
