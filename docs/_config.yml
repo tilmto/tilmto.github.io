@@ -23,8 +23,8 @@ email: yonggan.gatech@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is Yonggan's personal website.
 domain: tilmto.github.io
-baseurl: "https://tilmto.github.io/" # the subpath of your site, e.g. /blog
-url: "https://tilmto.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "https://tilmto.github.io/" # the subpath of your site, e.g. /blog
+# url: "https://tilmto.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  tilmto
 
 # Build settings
