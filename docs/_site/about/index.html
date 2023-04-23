@@ -1,88 +1,620 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>About | Yonggan’s personal website</title>
-<meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="About" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="This is Yonggan’s personal website." />
-<meta property="og:description" content="This is Yonggan’s personal website." />
-<link rel="canonical" href="http://localhost:4000/about/" />
-<meta property="og:url" content="http://localhost:4000/about/" />
-<meta property="og:site_name" content="Yonggan’s personal website" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="About" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"This is Yonggan’s personal website.","headline":"About","name":"Yonggan’s personal website","url":"http://localhost:4000/about/"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Yonggan&apos;s personal website" /></head>
-<body><header class="site-header" role="banner">
+<html lang="en">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Yonggan&#39;s personal website</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111713571-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-111713571-1');
+	</script>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post">
+	<!-- Show more content -->
+	<script type="text/javascript">
+		function toggle_vis(id) {
+	    // var e = document.getElementById(id);
+	    var e = document.getElementsByClassName(id);
+			var showText = document.getElementById("showText");
+			for (var i = 0; i < e.length; i++) {
+		    	if (e[i].style.display == "none") {
+		        	e[i].style.display = "inline";
+	    			showText.innerHTML = "[Show less]";
+		    	} else {
+		    		e[i].style.display = "none";
+		    		showText.innerHTML = "[Show more]";
+		    	}
+		    }
+	    }
+	</script>
 
-  <header class="post-header">
-    <h1 class="post-title">About</h1>
-  </header>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <div class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- https://fontawesome.com/cheatsheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+  <link rel="stylesheet" href="static/styles.css">
+	<!-- Custom styles for this template -->
+	<link href="files/jumbotron.css" rel="stylesheet">
+	<script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+  <style>
+    .navbar-custom {
+      background-color: #a9985f;
+    }
+  </style>
+</head>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<title>Yonggan Fu</title>
+
+<body>
+	<!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home"> -->
+    <nav class="navbar  navbar-expand-md navbar-dark fixed-top navbar-custom" id="Home">
+	    <div class="container">
+		<a class="navbar-brand" href="#Home"  style="font-size:20px">Yonggan Fu</a>
+
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#About" style="font-size:18px; color:white">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Publications" style="font-size:18px; color:white">Publications</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Education" style="font-size:18px; color:white">Education</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Experience" style="font-size:18px; color:white">Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Awards" style="font-size:18px; color:white">Awards</a>
+				</li>
+			</ul>
+		</div>
+	    </div>
+	</nav>
+
+	<div class="container" style="padding-top: 80px; font-size: 17px" id="About">
+		<div class="row">
+			<div class="col-md-3", style="padding-right: 40px">
+				<br>
+				<img class="img-responsive img-rounded" src="files/yonggan.jpg" alt="Photo" style="max-width: 100%; border:1px solid black"><br>
+			</div>
+
+			<div class="col-md-9">
+			<br>
+			<p>I am Yonggan Fu, a 4th year PhD student at <a href="https://www.gatech.edu/" target="_blank">Georgia Institute of Technology</a>, working with <a href="https://eiclab.scs.gatech.edu/pages/team.html" target='_blank'>Dr. Yingyan (Celine) Lin</a>. Before that,  I obtained my Bachelor's degree with a dual major in Applied Physics and Computer Science from <a href="https://en.scgy.ustc.edu.cn/" target="_blank">the School of The Gifted Young</a> at <a href="https://en.ustc.edu.cn/" target="_blank">the University of Science and Technology of China</a> in 2019.
+			</p>
+
+			<p>My research focus is to democratize cutting-edge AI technology on everyday devices via developing efficient and robust AI algorithms and co-designing the corresponding hardware accelerators towards a triple-win in accuracy, efficiency, and robustness.
+      My CV can be found <a href="https://drive.google.com/file/d/163kfCVUuaWjnafO8NOONzRRGv0SBfVrs/view?usp=sharing" target="_blank">here</a> (lastest update: Apr. 2023). 
+			</p>
+      
+			
+			<p>
+			<a target="_blank" href="https://scholar.google.com/citations?user=dp3C7GgAAAAJ&hl=en&oi=ao"><font color="black"><i class="ai ai-google-scholar ai-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+			<a target="_blank" href="https://github.com/tilmto"><font color="black"><i class="fab fa-github fa-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+			<a target="_blank" href="https://www.linkedin.com/in/yonggan-fu-b211831b0/"><font color="black"><i class="fab fa-linkedin fa-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+			yfu314 [at] gatech (dot) edu & yonggan (dot) gatech [at] gmail (dot) com
+			</p>
+
+			</div>
+		</div>
+	</div><br>
 
 
-  </div>
+   <!-- Research Interest -->
+	<div class="container">
+		<h3 id="Research" style="padding-top: 100px; margin-top: -80px;">Research Interest</h3><hr>
+		<ul>
+			<li>
+				<b>Algorithms</b>: Efficient and robust AI techniques 
+        [<a href="https://tilmto.github.io/" target="_blank">DAC'23</a>]
+        [<a href="https://proceedings.mlr.press/v162/fu22c/fu22c.pdf" target="_blank">ICML'22</a>]
+        [<a href="https://openreview.net/pdf?id=28ib9tf6zhr" target="_blank">ICLR'22</a>]
+        [<a href="https://proceedings.neurips.cc/paper/2021/file/6ce8d8f3b038f737cefcdafcf3752452-Paper.pdf" target="_blank">NeurIPS'21</a>]
+        [<a href="http://proceedings.mlr.press/v139/fu21c/fu21c.pdf" target="_blank">ICML'21</a>]
+        [<a href="https://openreview.net/pdf?id=87ZwsaQNHPZ" target="_blank">ICLR'21</a>]
+        [<a href="https://proceedings.neurips.cc/paper/2020/file/8dc5983b8c4ef1d8fcd5f325f9a65511-Paper.pdf" target="_blank">NeurIPS'20</a>]
+			</li>
+			<li>
+				<b>Systems</b>: Algorithm/Hardware co-design for on-device AI deployment 
+        [<a href="https://tilmto.github.io/" target="_blank">ISCA'23</a>]
+        [<a href="https://dl.acm.org/doi/pdf/10.1145/3466752.3480082" target="_blank">MICRO'21</a>]
+        [<a href="https://arxiv.org/pdf/2106.06577.pdf" target="_blank">DAC'21</a>]
+        [<a href="https://arxiv.org/pdf/2104.10853.pdf" target="_blank">DAC'21</a>]
+        [<a href="http://proceedings.mlr.press/v139/fu21d/fu21d.pdf" target="_blank">ICML'21</a>]
+			</li>
+			<li>
+				<b>Applications</b>: Computer Vision [<a href="https://tilmto.github.io/" target="_blank">CVPR'23</a>] 
+        [<a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Fu_SACoD_Sensor_Algorithm_Co-Design_Towards_Efficient_CNN-Powered_Intelligent_PhlatCam_ICCV_2021_paper.pdf" target="_blank">ICCV'21</a>] 
+        [<a href="http://proceedings.mlr.press/v119/fu20b/fu20b.pdf" target="_blank">ICML'20</a>]
+        and Automatic Speech Recognition [<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/83d349b6eb8125588b5f091e2d47525c-Paper-Conference.pdf" target="_blank">NeurIPS'22</a>]
+			</li>
+		</ul>
+	</div><br><br>
 
-</article>
 
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+  <!-- News -->
+	<div class="container">
+		<h3 id="News" style="padding-top: 70px; margin-top: -80px;">News</h3><hr>
+		<ul>
+			<li>
+				<tt>[Mar. 2023]</tt> Our work Gen-NeRF is accepted by <a href="https://iscaconf.org/isca2023/" target="_blank">ISCA 2023</a>.
+			</li>
+			<li>
+				<tt>[Feb. 2023]</tt> Our work Auto-CARD for efficient Codec Avatar driving is accepted by <a href="https://cvpr2023.thecvf.com/" target="_blank">CVPR 2023</a>.
+			</li>
+			<li>
+				<tt>[Feb. 2023]</tt> Our work Robust Transferred Tickets is accepted by <a href="https://www.dac.com/" target="_blank">DAC 2023</a>.
+			</li>
+			<li>
+				<tt>[Sep. 2022]</tt> Our work <a href="https://arxiv.org/pdf/2211.01522.pdf" target="_blank">S3-Router</a> for efficient automated speech recognition (in collaboration with IBM) is accepted by <a href="https://nips.cc/Conferences/2022" target="_blank">NeurIPS 2022</a>.
+			</li>
+			<li>
+				<tt>[May. 2022]</tt> Our work <a href="https://arxiv.org/pdf/2206.00843.pdf" target="_blank">DepthShrinker</a> (in collaboration with Meta) is accepted by <a href="https://icml.cc/Conferences/2022" target="_blank">ICML 2022</a>.
+			</li>
+			<li>
+				<tt>[Jan. 2022]</tt> Our work <a href="https://arxiv.org/pdf/2203.08392.pdf" target="_blank">Patch-Fool</a> is accepted by <a href="https://iclr.cc/Conferences/2022" target="_blank">ICLR 2022</a>.
+			</li>
+		</ul>
+	</div><br><br>
 
-  <div class="wrapper">
 
-    <h2 class="footer-heading">Yonggan&#39;s personal website</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Yonggan&#39;s personal website</li><li><a class="u-email" href="mailto:yonggan.gatech@gmail.com">yonggan.gatech@gmail.com</a></li></ul>
-      </div>
+	<!-- Publications -->
+	<div class="container">
+		<h3 id="Publications" style="padding-top: 70px; margin-top: -80px;">
+			Selected Publications
+			<small><small> (<i>see full publication list <a href="https://scholar.google.com/citations?user=dp3C7GgAAAAJ&hl=en&oi=ao" target='_blank'>here</a></i>)
+			</small></small><br>
+			<!-- <small><small>
+			(<a href="" id="select0" onclick="showPubs(0); return false;">show selected</a> /
+			 <a href="" id="select1" onclick="showPubs(1); return false;">show by date</a> /
+       			 <a href="" id="select2" onclick="showPubs(2); return false;">show by topic</a>)
+			</small></small><br> -->
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/tilmto"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">tilmto</span></a></li></ul>
-</div>
+			<!-- <small><small>
+		  	<font color="black">Research Topics:
+				<a href="#dynam" onclick="showPubs(2)">Robotic Manipulation</a> /
+				<a href="#phys" onclick="showPubs(2)">Physical Scene Understanding</a> /
+				<a href="#multi" onclick="showPubs(2)">Multi-Modal Perception</a> /
+				<a href="#imi" onclick="showPubs(2)">Imitation Learning</a>
+			</font><br>
+			</small></small> -->
+		</h3>
 
-      <div class="footer-col footer-col-3">
-        <p>This is Yonggan&#39;s personal website.</p>
-      </div>
-    </div>
+		<div id="pubs"></div>
 
-  </div>
+    <!-- <script id="pubs_selected" language="text"> -->
+		<div id="pubs_selected" language="text" style="padding-top: 20px"">
+			<!-- <font color="black">(* indicates equal contribution)</font><br><hr> -->
 
-</footer>
+			<div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/autocard.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Yuecheng Li, Chenghui Li, Jason Saragih, Peizhao Zhang, Xiaoliang Dai, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">Auto-CARD: Efficient and Robust Codec Avatar Driving for Real-time Mobile Telepresence</font></b><br>
+				<b><a href="https://cvpr2023.thecvf.com/" target="_blank">CVPR 2023</a></b>
+				<small>[Paper]</small>
+				<small>[Video]</small><br>
+        <font color="firebrick"><b>In collaboration with Meta</b></font><br>
+				</div>
+			</div><hr>
+
+			<div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/gennerf.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>*, Zhifan Ye*, Jiayi Yuan, Shunyao Zhang, Sixu Li, Haoran You, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">Gen-NeRF: Efficient and Generalizable Neural Radiance Fields via Algorithm-Hardware Co-Design</font></b><br>
+				<b><a href="https://iscaconf.org/isca2023/" target="_blank">ISCA 2023</a></b>
+				<small>[Paper]</small>
+				<small>[Video]</small>
+				</div>
+			</div><hr>
+
+			<div class="row">
+          <div class="col-md-2.5">
+            <img class="img-fluid img-rounded" src="files/rtt.png" style="width:200px; border:0px solid black" alt="">
+          </div>
+          <div class="col-md-9">
+        <b>Yonggan Fu</b>, Ye Yuan, Shang Wu, Jiayi Yuan, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">Robust Tickets Can Transfer Better: Drawing More Transferable Subnetworks in Transfer Learning</font></b><br>
+				<b><a href="https://www.dac.com/" target="_blank">DAC 2023</a></b>
+				<small>[Paper]</small>
+				<small>[Video]</small>
+				</div>
+			</div><hr>
+
+
+			<div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/s3router.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Ye Yuan, Shang Wu, Jiayi Yuan, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">Losses Can Be Blessings: Routing Self-Supervised Speech Representations Towards Efficient Multilingual and Multitask Speech Processing</font></b><br>
+				<b><a href="https://nips.cc/Conferences/2022" target="_blank">NeurIPS 2022</a></b>
+				<small><a href="https://arxiv.org/pdf/2211.01522.pdf" target="_blank">[Paper]</a></small>
+        <small><a href="https://github.com/GATECH-EIC/S3-Router" target="_blank">[Code]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=eacbr28Ygn8" target="_blank">[Video]</a></small>
+        <small><a href="https://drive.google.com/file/d/11NVFYijZ8g6Imt-tu4NjDxidyMveu-Gl/view" target="_blank">[Slide]</a></small><br>
+        <font color="firebrick"><b>In collaboration with MIT-IBM Watson AI Lab</b></font><br>
+				</div>
+			</div><hr>
+
+			<div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/depthshrinker.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Haichuan Yang, Jiayi Yuan, Meng Li, Cheng Wan, Raghuraman Krishnamoorthi, Vikas Chandra, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">DepthShrinker: A New Compression Paradigm Towards Boosting Real-Hardware Efficiency of Compact Neural Networks</font></b><br>
+				<b><a href="https://icml.cc/Conferences/2022" target="_blank">ICML 2022</a></b>
+				<small><a href="https://proceedings.mlr.press/v162/fu22c/fu22c.pdf" target="_blank">[Paper]</a></small>
+        <small><a href="https://github.com/facebookresearch/DepthShrinker" target="_blank">[Code]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=sXhCOOgO5AM" target="_blank">[Video]</a></small>, <small>Covered by</small>
+				<a href="https://www.nextplatform.com/2022/06/07/poor-hardware-utilization-puts-squeeze-on-ai-compression/" target="_blank"> <small>[The Next Platform]</small></a><br>
+        <font color="firebrick"><b>In collaboration with Meta</b></font><br>
+				</div>
+			</div><hr>
+
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/patchfool.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>*, Shunyao Zhang*, Shang Wu*, Cheng Wan, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">Patch-Fool: Are Vision Transformers Always Robust Against Adversarial Perturbations?</font></b><br>
+				<b><a href="https://iclr.cc/Conferences/2022" target="_blank">ICLR 2022</a></b>
+				<small><a href="https://openreview.net/pdf?id=28ib9tf6zhr" target="_blank">[Paper]</a></small>
+        <small><a href="https://github.com/GATECH-EIC/Patch-Fool" target="_blank">[Code]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=5rihXwvGNYo" target="_blank">[Video]</a></small><br>
+				</div>
+			</div><hr>
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/cq.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Qixuan Yu, Meng Li, Xu Ouyang, Vikas Chandra, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">Contrastive quant: Quantization Makes Stronger Contrastive Learning</font></b><br>
+				<b><a href="https://www.dac.com/" target="_blank">DAC 2022</a></b>
+				<small><a href="https://dl.acm.org/doi/abs/10.1145/3489517.3530419" target="_blank">[Paper]</a></small><br>
+				</div>
+			</div><hr>
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/rst.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Qixuan Yu, Yang Zhang, Shang Wu, Xu Ouyang, David Cox, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">Drawing Robust Scratch Tickets: Subnetworks with Inborn Robustness Are Found within Randomly Initialized Networks</font></b><br>
+				<b><a href="https://nips.cc/Conferences/2021" target="_blank">NeurIPS 2021</a></b>
+				<small><a href="https://proceedings.neurips.cc/paper/2021/file/6ce8d8f3b038f737cefcdafcf3752452-Paper.pdf" target="_blank">[Paper]</a></small>
+        <small><a href="https://github.com/GATECH-EIC/Robust-Scratch-Ticket" target="_blank">[Code]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=eXiAbHhbIa8" target="_blank">[Video]</a></small><br>
+        <font color="firebrick"><b>In collaboration with MIT-IBM Watson AI Lab</b></font><br>
+				</div>
+			</div><hr>
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/2in1.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Yang Zhao, Qixuan Yu, Chaojian Li, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">2-in-1 Accelerator: Enabling Random Precision Switch for Winning Both Adversarial Robustness and Efficiency</font></b><br>
+				<b><a href="https://microarch.org/micro54/index.php" target="_blank">MICRO 2021</a></b>
+				<small><a href="https://dl.acm.org/doi/pdf/10.1145/3466752.3480082" target="_blank">[Paper]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=6qWRgpVOm4U" target="_blank">[Video]</a></small><br>
+				</div>
+			</div><hr>
+
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/sacod.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Yang Zhang, Yue Wang, Zhihan Lu, Vivek Boominathan, Ashok Veeraraghavan, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">SACoD: Sensor Algorithm Co-Design Towards Efficient CNN-powered Intelligent PhlatCam</font></b><br>
+				<b><a href="https://iccv2021.thecvf.com/home" target="_blank">ICCV 2021</a></b>
+				<small><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Fu_SACoD_Sensor_Algorithm_Co-Design_Towards_Efficient_CNN-Powered_Intelligent_PhlatCam_ICCV_2021_paper.pdf" target="_blank">[Paper]</a></small>
+        <small><a href="https://github.com/GATECH-EIC/SACoD" target="_blank">[Code]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=lxrlnd4_5Dk" target="_blank">[Video]</a></small><br>
+        <font color="firebrick"><b>In collaboration with MIT-IBM Watson AI Lab</b></font><br>
+				</div>
+			</div><hr>
+
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/dwq.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Qixuan Yu, Meng Li, Vikas Chandra, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">Double-Win Quant: Aggressively Winning Robustness of Quantized Deep Neural Networks via Random Precision Training and Inference</font></b><br>
+				<b><a href="https://icml.cc/Conferences/2021" target="_blank">ICML 2021</a></b>
+				<small><a href="http://proceedings.mlr.press/v139/fu21c/fu21c.pdf" target="_blank">[Paper]</a></small>
+        <small><a href="https://github.com/GATECH-EIC/Double-Win-Quant" target="_blank">[Code]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=QeI6v0a8SB4" target="_blank">[Video]</a></small><br>
+        <font color="firebrick"><b>In collaboration with Meta</b></font><br>
+				</div>
+			</div><hr>
+
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/autonba.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Yongan Zhang, Yang Zhang, David Cox, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">Auto-NBA: Efficient and Effective Search Over the Joint Space of Networks, Bitwidths, and Accelerators</font></b><br>
+				<b><a href="https://icml.cc/Conferences/2021" target="_blank">ICML 2021</a></b>
+				<small><a href="http://proceedings.mlr.press/v139/fu21d/fu21d.pdf" target="_blank">[Paper]</a></small>
+        <small><a href="https://github.com/GATECH-EIC/Auto-NBA" target="_blank">[Code]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=fbN4r7J22ns" target="_blank">[Video]</a></small><br>
+        <font color="firebrick"><b>In collaboration with MIT-IBM Watson AI Lab</b></font><br>
+				</div>
+			</div><hr>
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/instantnet.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Zhongzhi Yu, Yongan Zhang, Yifan Jiang, Chaojian Li, Yongyuan Liang, Mingchao Jiang, Zhangyang Wang, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">InstantNet: Automated Generation and Deployment of Instantaneously Switchable-Precision Networks</font></b><br>
+				<b><a href="https://www.dac.com/" target="_blank">DAC 2021</a></b>
+				<small><a href="https://arxiv.org/pdf/2104.10853.pdf" target="_blank">[Paper]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=IN_n-Nen_rI" target="_blank">[Video]</a></small><br>
+				</div>
+			</div><hr>
+
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/a3cs.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Yongan Zhang, Chaojian Li, Zhongzhi Yu, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">A3C-S: Automated Agent Accelerator Co-Search towards Efficient Deep Reinforcement Learning</font></b><br>
+				<b><a href="https://www.dac.com/" target="_blank">DAC 2021</a></b>
+				<small><a href="https://arxiv.org/pdf/2106.06577.pdf" target="_blank">[Paper]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=-GkNUoulJhY" target="_blank">[Video]</a></small><br>
+				</div>
+			</div><hr>
+
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/cpt.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Han Guo, Meng Li, Xin Yang, Yining Ding, Vikas Chandra, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">CPT: Efficient Deep Neural Network Training via Cyclic Precision</font></b><br>
+				<b><a href="https://iclr.cc/Conferences/2021" target="_blank">ICLR 2021</a></b>
+				<small><a href="https://openreview.net/pdf?id=87ZwsaQNHPZ" target="_blank">[Paper]</a></small>
+        <small><a href="https://github.com/GATECH-EIC/CPT" target="_blank">[Code]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=LdUzTP60Mtw" target="_blank">[Video]</a></small><br>
+        <font color="firebrick"><b>Spotlight paper (top 6%), in collaboration with Meta</b></font><br>
+				</div>
+			</div><hr>
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/fractrain.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Haoran You, Yang Zhao, Yue Wang, Chaojian Li, Kailash Gopalakrishnan, Zhangyang Wang, Yingyan (Celine) Lin
+				<br>
+				<b><font color="black">FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training</font></b><br>
+				<b><a href="https://nips.cc/Conferences/2020" target="_blank">NeurIPS 2020</a></b>
+				<small><a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/8dc5983b8c4ef1d8fcd5f325f9a65511-Paper.pdf" target="_blank">[Paper]</a></small>
+        <small><a href="https://github.com/GATECH-EIC/FracTrain" target="_blank">[Code]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=NHKrawd9DAw" target="_blank">[Video]</a></small><br>
+				</div>
+			</div><hr>
+
+      <div class="row">
+				<div class="col-md-2.5">
+					<img class="img-fluid img-rounded" src="files/autogandistiller.png" style="width:200px; border:0px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+        <b>Yonggan Fu</b>, Wuyang Chen, Haotao Wang, Haoran Li, Yingyan (Celine) Lin, Zhangyang Wang
+				<br>
+				<b><font color="black">AutoGan-Distiller: Searching to Compress Generative Adversarial Networks</font></b><br>
+				<b><a href="https://icml.cc/Conferences/2020" target="_blank">ICML 2020</a></b>
+				<small><a href="http://proceedings.mlr.press/v119/fu20b/fu20b.pdf" target="_blank">[Paper]</a></small>
+        <small><a href="https://github.com/VITA-Group/AGD" target="_blank">[Code]</a></small>
+        <small><a href="https://www.youtube.com/watch?v=w_49DD10m9g" target="_blank">[Video]</a></small><br>
+				</div>
+			</div><hr>
+
+		</div>
+    <!-- </script> -->
+
+	</div>
+	
+	
+	<br><br>
+
+
+
+
+    <!-- Education -->
+  <div class="container">
+    <h3 id="Education" style="padding-top: 70px; margin-top: -80px;">Education</h3>
+    <hr>
+    <ul>
+      <li>
+        Ph.D. Student advised by <a href="https://eiclab.scs.gatech.edu/pages/team.html" target='_blank'>Dr. Yingyan (Celine) Lin</a>, Jan. 2023 - Present<br> 
+        <i>School of Computer Science, Georgia Institute of Technology</i>
+      </li>
+      <li>
+        Ph.D. Student advised by <a href="https://eiclab.scs.gatech.edu/pages/team.html" target='_blank'>Dr. Yingyan (Celine) Lin</a>, Aug. 2019 - Dec. 2022<br> 
+        <i>Department of Electrical and Computer Engineering, Rice University</i>
+      </li>
+      <li>
+        Bachelor’s Degree in Applied Physics & Computer Science, Aug. 2015 - Jun. 2019<br> 
+        <i>School of Gifted Young, University of Science and Technology of China</i>
+      </li>
+    </ul>
+  </div><br><br>
+
+
+
+	<!-- Experience -->
+	<div class="container">
+		<h3 id="Experience" style="padding-top: 70px; margin-top: -80px;">Experience</h3>
+    <hr>
+		<ul>
+			<li>
+				Research Intern, Reality Lab, Meta Inc., May. 2022 - Dec. 2022<br>
+        Project: Efficient and Robust Codec Avatar Driving for Real-time Mobile Telepresence<br>
+				Advisor: <a href="https://www.linkedin.com/in/yuecheng-li/" target="_blank">Dr. Yuecheng Li</a> and <a href="https://research.facebook.com/people/zhang-peizhao/" target="_blank">Dr. Peizhao Zhang</a>
+			</li>
+			<li>
+				Research Intern, On-device AI Group, Meta Inc., Sep. 2021 - Dec. 2021<br>
+        Project: DepthShrinker - A New Compression Paradigm Towards Boosting Real-Hardware Efficiency of Compact Neural Networks<br>
+				Advisor: <a href="https://mengli.me/" target="_blank">Dr. Meng Li</a> and <a href="https://hyang1990.github.io/" target="_blank">Dr. Haichuan Yang</a>
+			</li>
+			<li>
+				Research Intern, On-device AI Group, Meta Inc., May. 2021 - Aug. 2021<br>
+        Project: On-device Image Super Resolution via Dynamic Convolution<br>
+				Advisor: <a href="https://mengli.me/" target="_blank">Dr. Meng Li</a> and <a href="https://hyang1990.github.io/" target="_blank">Dr. Haichuan Yang</a>
+			</li>
+			<li>
+				Research Assistant, USTC-AC Lab, University of Science and Technology of China, Sep. 2018 - May. 2019<br>
+        Project: Facial Landmark Localization and Empathy Recognition<br>
+				Advisor: <a href="https://ustc-ac.github.io/people/" target="_blank">Dr. Shangfei Wang</a>
+			</li>
+			<li>
+				Research Assistant, University of California, Santa Barbara, Jun. 2018 - Sep. 2018<br>
+        Project: Compiler and Architecture Co-optimization for Quantum Computing<br>
+				Advisor: <a href="https://picassolab.squarespace.com/yufei" target="_blank">Dr. Yufei Ding</a>
+			</li>
+	</div><br><br>
+
+  
+  	<!-- Awards -->
+	<div class="container">
+		<h3 id="Awards" stype="padding-top: 70px; margin-top: -80px;">
+			Selected Awards
+		</h3>
+		<hr>
+
+		<ul>
+			<li><tt>[Dec. 2022]</tt> Rice Engineering Alumni Graduate Student Travel Grant</li>
+			<li><tt>[Oct. 2022]</tt> NeurIPS 2022 Scholar Award</li>
+			<li><tt>[Jul. 2022]</tt> 1st Place of University Demo Best Demonstration at DAC 2022</li>
+			<li><tt>[Jun. 2022]</tt> ICML 2022 Travel Grant</li>
+			<li><tt>[Dec. 2021]</tt> DAC Young Student Fellow</li>
+      <li><tt>[Jul. 2019]</tt> Outstanding Undergraduate Award of University of Science and Technology of China</li>
+      <li><tt>[Jan. 2019]</tt> 2nd Place in OMG-Empathy Prediction Challenge held by ICFG 2019</li>
+      <li><tt>[Oct. 2018]</tt> Gold Scholarship of University of Science and Technology of China</li>
+      <li><tt>[Oct. 2017]</tt> Gold Scholarship of University of Science and Technology of China</li>
+		</ul>
+  
+	</div><br><br>
+
+  <div class="container">
+		<h3 id="Services" stype="padding-top: 70px; margin-top: -80px;">
+			Community Services
+		</h3>
+		<hr>
+
+		<ul>
+			<li>Co-chair of 2023 DAC Ph.D. Forum</li>
+			<li>CVPR 2022 Outstanding Reviewer</li>
+			<li>Conference Review: NeurIPS 2023, ICCV 2023, ICML 2023, CVPR 2023, ICLR 2023, NeurIPS 2022, ECCV 2022,
+        ICML 2022, CVPR 2022, ICLR 2022, NeurIPS 2021, ICML 2021, CVPR 2021, AAAI 2021</li>
+			<li>Journal Review: JMLR, TNNLS, TCAD, TCAS-II, TCSVT, JSA</li>
+		</ul>
+  
+	</div><br><br>
+
+
+	<!-- Talks -->
+	<div class="container">
+		<h3 id="Talks" stype="padding-top: 70px; margin-top: -80px;">
+			Invited Talks
+		</h3>
+		<hr>
+
+		<!-- <div class="row">
+			<div class="col-md-2">
+				<a href="https://www.youtube.com/watch?v=ost49rbnI_8&t=7207s" target="_blank"><img class="img-fluid img-rounded" src="talks/20220617_ThesisDefense/logo_2.jpg" style="border:1px solid black" alt=""></a>
+			</div>
+
+			<div class="col-md-10">
+				Learning Structured World Models From and For Physical Interactions	
+				<br>
+				<b><font color="black">PhD Thesis Defense at MIT CSAIL</font></b>
+				<br>
+				[2022/06] <a href="https://youtu.be/8eof6F4-r0k" target="_blank">[Recording]</a>
+			</div>
+		</div><hr> -->
+
+		<ul>
+			<li><tt>[Aug. 2022]</tt> Invited Talk at <a href="https://rtml.eiclab.net/" target="_blank">HARMONY-RTML Project Workshop @ Rice University</a></li>
+			<li><tt>[Apr. 2022]</tt> Invited Talk at <a href="https://mitibmwatsonailab.mit.edu/" target="_blank">5k Language Project Seminar @ MIT-IBM Watson AI Lab</a></li>
+			<li><tt>[Mar. 2022]</tt> Invited Talk at <a href="https://nicsefc.ee.tsinghua.edu.cn/" target="_blank">NICS Lab @ Tsinghua University</a></li>
+			<li><tt>[Feb. 2022]</tt> Invited Talk at <a href="https://www.aitime.cn/" target="_blank">Artificial Intelligence Time @ Tsinghua Universty</a></li>
+			<li><tt>[Oct. 2020]</tt> Invited Talk at <a href="https://2020ricedsconference.rice.edu/" target="_blank">Ken Kennedy Institute Data Science Conference 2020</a></li>
+		</ul>
+  
+	</div><br><br>
+
+
+
+	<div class="container">
+		<hr>
+		<center>
+			<footer>
+				<p>&copy; Yonggan Fu 2023. This template is modified from <a href="https://yunzhuli.github.io/" target="_blank">[1]</a>.</p>
+			</footer>
+		</center>
+	</div>
+	<!-- /container -->
+
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script>showPubs(1);</script>
+	<script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 
 </html>
